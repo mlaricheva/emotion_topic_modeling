@@ -8,7 +8,6 @@ import gensim
 from gensim.utils import simple_preprocess
 import numpy as np
 import warnings
-from wordcloud import WordCloud
 
 CUSTOM_STOP_WORDS = ["like", "really", "think", "mhm", "kind", "mean"]
 EMO_LIST = ["anger", "anticipation", "disgust", "fear", "joy", "sadness", "surprise"]
@@ -29,7 +28,7 @@ def remove_stop_words(utterance, stop_words):
 def clean_and_tokenize(text, stop_words):
     text = re.sub("[\(\[].*?[\)\]]", "", text)
     text = text.lower() # lower the text
-    with open('contractions.json') as f: # replace contractions
+    with open('../contractions.json') as f: # replace contractions
         contractions = json.load(f)
     for word in text.split():
         if word in contractions:
