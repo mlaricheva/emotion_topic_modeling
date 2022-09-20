@@ -15,6 +15,7 @@ The topic modeling is based on Non-Negative Matrix Factorization model from [skl
 ## Citation
 
 Please cite our paper as below:
+```
 @InProceedings{10.1007/978-3-031-17114-7_21,
 author="Liu, Yan and Laricheva, Maria and Zhang, Chiyu and Boutet, Patrick and Chen, Guanyu and Tracey, Terence and Carenini, Giuseppe and Young, Richard",
 title="Transition to Adulthood for Young People with Intellectual or Developmental Disabilities: Emotion Detection and Topic Modeling",
@@ -23,5 +24,6 @@ year="2022",
 publisher="Springer International Publishing",
 isbn="978-3-031-17114-7"
 }
+```
 
 
